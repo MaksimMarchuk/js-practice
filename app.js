@@ -37,3 +37,10 @@ minustBtn.addEventListener('click', () => {
     counterValue.textContent = quantity;
   }
 });
+
+const commodity = document.getElementById('myBtn');
+const targetContainer = document.getElementById('box-2');
+
+commodity.addEventListener('click', () => {
+  targetContainer.appendChild(commodity);
+}, { once: true });
